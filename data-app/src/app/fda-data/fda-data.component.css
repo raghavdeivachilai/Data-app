@@ -1,0 +1,80 @@
+table {
+  width: 100%;
+}
+
+.welcometext {
+  bottom: 20vh;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+span {
+  padding-right: 1rem;
+}
+
+.filterbuttons {
+  margin-right: 20px;
+}
+
+.filterbuttonsdiv{
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+.mat-card-cvr{
+  width: 100%;
+  text-align:center;
+}
+
+mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.card-div {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.cardform-div {
+  margin-left: 3%;
+  margin-right: 5%;
+  margin-bottom:20px;
+}
+
+.candidatecard {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding-top: 2%;
+}
+
+.test1 {
+  background-color: #673AB7;
+}
+
+.test2 {
+  background-color: #673AB7;
+}
+
+.test3 {
+  background-color: #673AB7;
+}
+
+.test4 {
+  background-color: #673AB7;
+}
+mat-header-cell, mat-cell {
+  display: flex;
+  justify-content: flex-end;
+}
+.sortascbuttons{
+  width: 10px;
+  height: 10px;
+}
+

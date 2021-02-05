@@ -1,0 +1,23 @@
+.main-div{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-div{
+  height: 25vh;
+  width: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  display: flex;
+  height: 12vh;
+  justify-content: center;
+  align-items: center;
+}
+.buttonclass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
