@@ -47,7 +47,8 @@ I used Angularx-social-login for creating the social login using Google.
 
 1) You also need to install node (version 14.15.4)
 
-2) You need to install Angular using npm install -g @angular/cli
+2) You need to install Angular using:
+`npm install -g @angular/cli`
 
 3) Clone the GitHub repo
 
