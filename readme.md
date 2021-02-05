@@ -56,7 +56,7 @@ I used Angularx-social-login for creating the social login using Google.
 ->data-app
 ->Server
 
-5)Inside data-app and server use `npm- install` to install all the packages
+5)Inside data-app and server use `npm install` to install all the packages
 
 6) First run the middleware by going into server and using the command `node server.js`
 
