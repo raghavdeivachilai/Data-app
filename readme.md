@@ -56,11 +56,11 @@ I used Angularx-social-login for creating the social login using Google.
 ->data-app
 ->Server
 
-5)Inside data-app and server use npm- install to install all the packages
+5)Inside data-app and server use `npm- install` to install all the packages
 
-6) First run the middleware by going into server and using the command node server.js
+6) First run the middleware by going into server and using the command `node server.js`
 
-7)Then go into data-app and run the angular app using ng-serve
+7)Then go into data-app and run the angular app using `ng-serve`
 
 Login using your google account and you can see the data.
 
