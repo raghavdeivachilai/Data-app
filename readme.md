@@ -62,5 +62,4 @@ I used Angularx-social-login for creating the social login using Google.
 
 7)Then go into data-app and run the angular app using `ng-serve`
 
-Login using your google account and you can see the data.
-
+Login using your google account and you can see the data.( To sign out, double click on the signout button)
