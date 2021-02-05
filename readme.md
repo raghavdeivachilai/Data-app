@@ -14,22 +14,23 @@ This candidate dataset gives you access to information about the people running 
 * Upload the project to a version control to update and maintain the project in the future.
 
 ## How did you accomplish the objectives?
-Create a sign in page using Google API:
+
+* Create a sign in page using Google API:
 I used the angularx-social package and Google devloepers console to create an sign in using a Google account.
 
-Create routes to get the data from external API’s:
+* Create routes to get the data from external API’s:
 Created routes in Angular and used a Node.js middleware to consume the data from external API. 
 
-Create a table that can display the data’s rows and columns:
+* Create a table that can display the data’s rows and columns:
 I used Angular material package to create the entire UI and the table. I filled the table with the data from the middleware.
 
-Use Pagination to display the large amount of data in a fast and efficient manner:
+* Use Pagination to display the large amount of data in a fast and efficient manner:
 I used server side pagination to improve the loading speed of the page  since the dataset was big. I created the UI for pagination using Angular material and used the Node.js middleware for the pagination.
 
-Create forms that help filter the data based on specific columns in the data:
+* Create forms that help filter the data based on specific columns in the data:
 I used Angular’s Two-way binding to get the data from the user in real time and query the API based the data and display the results in the table. 
 
-Create buttons that could sort the data based on a column in ascending or descending manner:
+* Create buttons that could sort the data based on a column in ascending or descending manner:
 I used server side sorting and send requests to the extrenal API to sort the data in an ascending or descending manner.
 
 ## Front-end framework?
