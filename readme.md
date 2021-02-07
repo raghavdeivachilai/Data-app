@@ -33,10 +33,10 @@ I used Angular’s Two-way binding to get the data from the user in real time an
 * Create buttons that could sort the data based on a column in ascending or descending manner:
 I used server side sorting and send requests to the extrenal API to sort the data in an ascending or descending manner.
 
-## Front-end framework?
+## Front-end framework:
 I used Angular 11 as the front-end framework and also used a Node.js middleware to get the data from the external API in a secure manner preventing CORS errors.
 
-## Packages?
+## Packages:
 Angular- material:
 I used Angular material for creating the user interface.
 
@@ -45,7 +45,7 @@ I used Angularx-social-login for creating the social login using Google.
 
 ## Steps for running and testing code
 
-1) You also need to install node (version 14.15.4)
+1) You need to install node (version 14.15.4)
 
 2) You need to install Angular using:
 `npm install -g @angular/cli`
