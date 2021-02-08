@@ -8,16 +8,19 @@
 <mat-card class="candidatecard">
   <mat-card-title class="mat-card-cvr">FEC Dataset</mat-card-title>
   <mat-card-content>The dataset contains information about people running for office.
-    A candidate is an individual seeking nomination for election to a federal office. People become candidates when they raise contributions or make expenditures that exceed $5,000.</mat-card-content>
+    A candidate is an individual seeking nomination for election to a federal office. People become candidates when they
+    raise contributions or make expenditures that exceed $5,000.
+  </mat-card-content>
 </mat-card>
 <div class="filterbuttonsdiv">
-  <button mat-raised-button [ngClass]="{'test1': newColor1}" (click)="displayform(1)" class="filterbuttons">Name
+  <button mat-raised-button [ngClass]="{'test1': colorflags[0]}" (click)="displayform(0)" class="filterbuttons">Name
   </button>
-  <button mat-raised-button [ngClass]="{'test2': newColor2}" (click)="displayform(2)" class="filterbuttons">State
+  <button mat-raised-button [ngClass]="{'test2': colorflags[1]}" (click)="displayform(1)" class="filterbuttons">State
   </button>
-  <button mat-raised-button [ngClass]="{'test3': newColor3}" (click)="displayform(3)" class="filterbuttons">Party
+  <button mat-raised-button [ngClass]="{'test3': colorflags[2]}" (click)="displayform(2)" class="filterbuttons">Party
   </button>
-  <button mat-raised-button [ngClass]="{'test4': newColor4}" (click)="displayform(4)" class="filterbuttons">ID</button>
+  <button mat-raised-button [ngClass]="{'test4': colorflags[3]}" (click)="displayform(3)" class="filterbuttons">ID
+  </button>
   <button mat-raised-button [matMenuTriggerFor]="menu1" style="float: right; margin-right: 50px;">
     <mat-icon>arrow_upward</mat-icon>
   </button>
@@ -37,16 +40,16 @@
     <button mat-menu-item (click)="sortcandidatestatedesc()">State</button>
   </mat-menu>
 </div>
-<mat-card class="cardform-div" *ngIf="nameflag">
+<mat-card class="cardform-div" *ngIf="displayflags[0]">
   <mat-form-field>
     <mat-label>Filter by Candidate Name</mat-label>
     <label>
-    <input matInput type="text" [(ngModel)]="candidatenameval" (input)="findByCandidateName(candidatenameval)"
-           placeholder="Search Candidate Name">
+      <input matInput type="text" [(ngModel)]="candidatenameval" (input)="findByCandidateName(candidatenameval)"
+             placeholder="Search Candidate Name">
     </label>
   </mat-form-field>
 </mat-card>
-<mat-card class="cardform-div" *ngIf="idflag">
+<mat-card class="cardform-div" *ngIf="displayflags[3]">
   <mat-form-field>
     <mat-label>Filter by Candidate ID</mat-label>
     <label>
@@ -55,15 +58,15 @@
     </label>
   </mat-form-field>
 </mat-card>
-<mat-card class="cardform-div" *ngIf="stateflag">
+<mat-card class="cardform-div" *ngIf="displayflags[1]">
   <mat-form-field>
     <mat-label>Filter by State</mat-label>
     <label>
-      <input matInput type="text" [(ngModel)]="stateval" (input)="findByState(stateval)" placeholder="Search by State">
+      <input matInput type="text" [(ngModel)]="stateval" (input)="findByState(stateval)" placeholder="Search by State (Ex. UT)">
     </label>
   </mat-form-field>
 </mat-card>
-<mat-card class="cardform-div" *ngIf="partyflag">
+<mat-card class="cardform-div" *ngIf="displayflags[2]">
   <mat-form-field>
     <mat-label>Filter by Party</mat-label>
     <label>
